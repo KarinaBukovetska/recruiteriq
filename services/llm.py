@@ -191,7 +191,7 @@ def load_schema_from_db(engine) -> None:
         print(f"[llm] Схема завантажена: {len(table_names)} таблиць")
     except Exception as e:
         print(f"[llm] Не вдалось завантажити схему: {e} — fallback")
-        _SCHEMA_DYNAMIC = "admins(id,name) requests(id,title,status,author_id,duration,created_at,deleted_at) requests_benches(id,request_id,bench_id,author_id,rate,created_at) requests_bs_statuses(id,requests_bs_id,status,created_at) requests_bs_status_reasons(id,status_id,reason,other_reason) benches(id,full_name,rate,seniority_level,created_at,deleted_at) bench_technologies(bench_id,technology_id,level) technologies(id,title)"
+        _SCHEMA_DYNAMIC = ""
     _rebuild_prompt()
 
 
