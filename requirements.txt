@@ -1,0 +1,7 @@
+flask
+flask-cors
+pandas
+sqlalchemy
+google-genai
+python-dotenv
+pymysql
