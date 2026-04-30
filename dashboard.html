@@ -19,7 +19,6 @@
 }
 body { font-family:var(--font); background:var(--bg); color:var(--text); display:flex; height:100vh; overflow:hidden; font-size:13px; }
 
-/* ── SIDEBAR ── */
 .sidebar { width:230px; min-width:230px; background:var(--surface); border-right:1px solid var(--border); display:flex; flex-direction:column; overflow:hidden; }
 .logo { padding:18px 18px 14px; border-bottom:1px solid var(--border); }
 .logo-text { font-size:15px; font-weight:600; color:var(--text); letter-spacing:-.3px; }
@@ -38,7 +37,6 @@ body { font-family:var(--font); background:var(--bg); color:var(--text); display
 .sidebar-footer { padding:10px 14px; border-top:1px solid var(--border); font-size:11px; color:var(--muted); }
 .status-dot { display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--green); margin-right:6px; }
 
-/* ── MAIN ── */
 .main { flex:1; display:flex; flex-direction:column; overflow:hidden; min-width:0; }
 .topbar { background:var(--surface); border-bottom:1px solid var(--border); padding:0 20px; height:50px; display:flex; align-items:center; justify-content:space-between; flex-shrink:0; gap:10px; }
 .page-title { font-size:13px; font-weight:500; color:var(--text); white-space:nowrap; }
@@ -47,7 +45,6 @@ body { font-family:var(--font); background:var(--bg); color:var(--text); display
 .content::-webkit-scrollbar { width:4px; }
 .content::-webkit-scrollbar-thumb { background:var(--border2); border-radius:2px; }
 
-/* ── BUTTONS ── */
 .btn { display:inline-flex; align-items:center; gap:5px; padding:5px 11px; border-radius:5px; font-size:12px; font-family:var(--font); font-weight:500; cursor:pointer; border:1px solid var(--border2); background:var(--surface2); color:var(--muted2); transition:all .15s; white-space:nowrap; }
 .btn:hover { border-color:var(--accent); color:var(--accent); }
 .btn:disabled { opacity:.4; cursor:not-allowed; }
@@ -63,16 +60,13 @@ select.filter-select:hover { border-color:var(--accent); }
 input.date-input { background:var(--surface2); border:1px solid var(--border2); color:var(--muted2); padding:5px 8px; border-radius:5px; font-size:12px; font-family:var(--mono); outline:none; width:115px; transition:border-color .15s; }
 input.date-input:focus { border-color:var(--accent); color:var(--text); }
 
-/* ── VIEWS ── */
 .view { display:none; }
 .view.active { display:block; }
 
-/* ── ALERTS ── */
 .alerts-bar { padding:10px 20px 0; display:flex; flex-direction:column; gap:6px; }
 .alert-item { display:flex; align-items:center; gap:10px; padding:8px 14px; background:rgba(255,71,87,.08); border:1px solid rgba(255,71,87,.2); border-radius:6px; font-size:12px; color:var(--red); }
 .alert-item .alert-icon { font-size:14px; }
 
-/* ── DASHBOARD ── */
 .dashboard-grid { padding:16px 20px; display:flex; flex-direction:column; gap:14px; }
 .kpi-row { display:grid; grid-template-columns:repeat(5,1fr); gap:10px; }
 .kpi-card { background:var(--surface); border:1px solid var(--border); border-radius:7px; padding:14px 16px; position:relative; overflow:hidden; }
@@ -89,7 +83,6 @@ input.date-input:focus { border-color:var(--accent); color:var(--text); }
 .chart-card { background:var(--surface); border:1px solid var(--border); border-radius:7px; padding:16px 18px; }
 .chart-title { font-size:10px; text-transform:uppercase; letter-spacing:1px; color:var(--muted); margin-bottom:14px; }
 
-/* ── RECRUITER TABLE ── */
 .rec-table { width:100%; border-collapse:collapse; font-size:12px; }
 .rec-table th { text-align:left; padding:5px 10px; font-size:9px; text-transform:uppercase; letter-spacing:.8px; color:var(--muted); border-bottom:1px solid var(--border); }
 .rec-table td { padding:7px 10px; border-bottom:1px solid var(--border); }
@@ -103,7 +96,6 @@ input.date-input:focus { border-color:var(--accent); color:var(--text); }
 .tag.red   { background:rgba(255,71,87,.1);  color:var(--red);   border-color:rgba(255,71,87,.2); }
 .tag.yellow{ background:rgba(255,193,7,.1);  color:var(--yellow);border-color:rgba(255,193,7,.2); }
 
-/* ── COMPARISON VIEW ── */
 .compare-wrap { padding:20px; }
 .compare-header { display:flex; align-items:center; gap:12px; margin-bottom:20px; flex-wrap:wrap; }
 .compare-header h2 { font-size:14px; font-weight:500; color:var(--text); margin-right:auto; }
@@ -117,7 +109,6 @@ input.date-input:focus { border-color:var(--accent); color:var(--text); }
 .compare-empty { text-align:center; padding:60px; color:var(--muted); }
 .compare-chart-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:14px; }
 
-/* ── CHAT ── */
 .chat-layout { display:flex; flex-direction:column; height:calc(100vh - 50px); }
 .messages { flex:1; overflow-y:auto; padding:16px 20px; display:flex; flex-direction:column; gap:12px; }
 .messages::-webkit-scrollbar { width:3px; }
@@ -163,7 +154,6 @@ textarea::placeholder { color:var(--muted); }
 textarea:focus { border-color:var(--accent); }
 .hint { text-align:center; font-size:10px; color:var(--muted); margin-top:5px; font-family:var(--mono); }
 
-/* ── FAVORITES / SESSIONS PANEL ── */
 .panel-wrap { padding:20px; }
 .panel-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:16px; }
 .panel-header h2 { font-size:14px; font-weight:500; }
@@ -176,7 +166,6 @@ textarea:focus { border-color:var(--accent); }
 .panel-item-actions { display:flex; gap:6px; flex-shrink:0; }
 .empty { text-align:center; padding:40px; color:var(--muted); font-size:12px; }
 
-/* ── ONBOARDING ── */
 .onboarding-overlay { position:fixed; inset:0; background:rgba(8,12,16,.92); z-index:1000; display:flex; align-items:center; justify-content:center; backdrop-filter:blur(4px); }
 .onboarding-card { background:var(--surface); border:1px solid var(--border2); border-radius:12px; padding:32px 36px; max-width:480px; width:90%; }
 .onboarding-step { display:none; }
@@ -191,14 +180,12 @@ textarea:focus { border-color:var(--accent); }
 .ob-dot.active { background:var(--accent); }
 .ob-icon { font-size:32px; margin-bottom:14px; }
 
-/* ── SPINNER ── */
 .spinner { width:14px; height:14px; border:2px solid var(--border2); border-top-color:var(--accent); border-radius:50%; animation:spin .7s linear infinite; display:inline-block; }
 @keyframes spin{to{transform:rotate(360deg)}}
 </style>
 </head>
 <body>
 
-<!-- ONBOARDING -->
 <div class="onboarding-overlay" id="onboarding" style="display:none">
   <div class="onboarding-card">
     <div class="onboarding-step active" id="ob0">
@@ -244,7 +231,6 @@ textarea:focus { border-color:var(--accent); }
   </div>
 </div>
 
-<!-- SIDEBAR -->
 <div class="sidebar">
   <div class="logo">
     <div class="logo-text">Recruit<span>IQ</span></div>
@@ -272,18 +258,15 @@ textarea:focus { border-color:var(--accent); }
   </div>
 </div>
 
-<!-- MAIN -->
 <div class="main">
   <div class="topbar">
     <div class="page-title" id="pageTitle">Дашборд</div>
     <div class="topbar-right" id="topbarRight">
-      <!-- filled by switchView -->
     </div>
   </div>
 
   <div class="content" id="contentArea">
 
-    <!-- DASHBOARD -->
     <div class="view active" id="view-dashboard">
       <div id="alertsBar" class="alerts-bar"></div>
       <div class="dashboard-grid" id="dashboardGrid">
@@ -291,7 +274,6 @@ textarea:focus { border-color:var(--accent); }
       </div>
     </div>
 
-    <!-- CHAT -->
     <div class="view" id="view-chat">
       <div class="chat-layout">
         <div class="messages" id="messages">
@@ -322,8 +304,6 @@ textarea:focus { border-color:var(--accent); }
         </div>
       </div>
     </div>
-
-    <!-- COMPARE -->
     <div class="view" id="view-compare">
       <div class="compare-wrap">
         <div class="compare-header">
